@@ -1,12 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HeaderComponent.scss";
+import logoUrl from "../../../assets/images/logo/rbit-logo.jpg";
+
 export const HeaderComponent = () => {
   return (
-    <header className={`header-area formobile-menu header--transparent default-color`}>
+    <header
+      className={`header-area formobile-menu header--transparent default-color`}
+    >
       <div className="header-wrapper" id="header-wrapper">
         <div className="header-left">
-          <div className="logo">{/* <a href="/">{logoUrl}</a> */}</div>
+          <div className="logo" style={{ width: "100px" }}>
+            <img src={logoUrl} />
+          </div>
         </div>
         <div className="header-right">
           <nav className="mainmenunav d-lg-block">
@@ -28,17 +34,17 @@ export const HeaderComponent = () => {
             </a>
           </div>
           {/* Start Humberger Menu  */}
-          <div className="humberger-menu d-block d-lg-none pl--20">
+          {/* <div className="humberger-menu d-block d-lg-none pl--20">
             <span onClick={() => {}} className="menutrigger text-white">
               Holaaa
             </span>
-          </div>
+          </div> */}
           {/* End Humberger Menu  */}
-          <div className="close-menu d-block d-lg-none">
+          {/* <div className="close-menu d-block d-lg-none">
             <span onClick={() => {}} className="closeTrigger">
               Holaaa
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
