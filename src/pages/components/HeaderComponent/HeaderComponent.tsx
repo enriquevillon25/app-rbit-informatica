@@ -21,6 +21,9 @@ export const HeaderComponent = () => {
                 <Link to="/contact">Servicios</Link>
               </li>
               <li>
+                <Link to="/contact">Nosotros</Link>
+              </li>
+              <li>
                 <Link to="/contact">Contacto</Link>
               </li>
             </ul>

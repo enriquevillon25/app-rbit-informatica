@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <HeaderComponent />
-      {/* <HomePage />; */}
+      <HomePage />;
     </BrowserRouter>
   );
 }
