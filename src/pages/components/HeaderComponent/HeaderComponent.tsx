@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./HeaderComponent.scss";
 export const HeaderComponent = () => {
   return (
-    <header className={`header-area formobile-menu header--transparent black`}>
+    <header className={`header-area formobile-menu header--transparent default-color`}>
       <div className="header-wrapper" id="header-wrapper">
         <div className="header-left">
           <div className="logo">{/* <a href="/">{logoUrl}</a> */}</div>
@@ -12,7 +12,10 @@ export const HeaderComponent = () => {
           <nav className="mainmenunav d-lg-block">
             <ul className="mainmenu">
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">Servicios</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contacto</Link>
               </li>
             </ul>
           </nav>
@@ -21,19 +24,19 @@ export const HeaderComponent = () => {
               className="rn-btn"
               href="https://themeforest.net/checkout/from_item/25457315?license=regular"
             >
-              <span>buy now</span>
+              <span>Tienda</span>
             </a>
           </div>
           {/* Start Humberger Menu  */}
           <div className="humberger-menu d-block d-lg-none pl--20">
             <span onClick={() => {}} className="menutrigger text-white">
-              Hola
+              Holaaa
             </span>
           </div>
           {/* End Humberger Menu  */}
           <div className="close-menu d-block d-lg-none">
             <span onClick={() => {}} className="closeTrigger">
-              Hola
+              Holaaa
             </span>
           </div>
         </div>
