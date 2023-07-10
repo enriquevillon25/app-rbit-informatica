@@ -11,17 +11,22 @@ export const HeaderComponent = () => {
       <div className="header-wrapper" id="header-wrapper">
         <div className="header-left">
           <div className="logo" style={{ width: "100px" }}>
+            <Link to={'/'}>
             <img src={logoUrl} />
+            </Link>
           </div>
         </div>
         <div className="header-right">
           <nav className="mainmenunav d-lg-block">
             <ul className="mainmenu">
               <li>
-                <Link to="/contact">Servicios</Link>
+                <Link to={"/services"}>Servicios</Link>
               </li>
               <li>
-                <Link to="/contact">Contacto</Link>
+                <Link to={"/about"}>Nosotros</Link>
+              </li>
+              <li>
+                <Link to={"/contact"}>Contacto</Link>
               </li>
             </ul>
           </nav>
