@@ -1,12 +1,12 @@
 import React from "react";
 import { HeaderComponent } from "../components/HeaderComponent/HeaderComponent";
 
-export const ContactUsPage = () => {
+export const ServicesUsPage = () => {
   return (
     <>
       <div>
         <HeaderComponent />
-        ContactUsPage
+        Servicios
       </div>
     </>
   );

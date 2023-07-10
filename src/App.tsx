@@ -1,17 +1,37 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { HomePage } from "./pages/Home/HomePage";
-import { BrowserRouter } from "react-router-dom";
-import { HeaderComponent } from "./pages/components/HeaderComponent/HeaderComponent";
+import {RouterProvider, createBrowserRouter } from "react-router-dom";
 import './index.scss';
+import { ServicesUsPage } from "./pages/ServicesUs/ServicesUs";
+import { AboutUsPage } from "./pages/AboutUs/AboutUs";
+import { ContactUsPage } from "./pages/ContactUs/ContactUsPage";
+
+
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element: <HomePage/>,
+    errorElement: <HomePage/>
+  },
+  {
+    path:'/services',
+    element: <ServicesUsPage/>
+  },
+  {
+    path:'/about',
+    element: <AboutUsPage/>
+  },
+  {
+    path:'/contact',
+    element: <ContactUsPage/>
+  },
+])
+
 
 function App() {
   return (
-    <BrowserRouter>
-      <HeaderComponent />
-      <HomePage />;
-    </BrowserRouter>
+    <RouterProvider router={router}/>
   );
 }
 
