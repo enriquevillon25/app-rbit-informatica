@@ -1,6 +1,5 @@
 import React from "react";
 import { HeaderComponent } from "../components/HeaderComponent/HeaderComponent";
-import "./HomePage.scss";
 import hola from "../../assets/images/icons/icon-01.png";
 export const HomePage = () => {
   const ServiceList = [
